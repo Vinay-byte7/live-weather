@@ -1,0 +1,410 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: poppins;
+  box-sizing: border-box;
+}
+body {
+  height: 100vh;
+  width: 100vw;
+  background-color: #c3bef7;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.main {
+  position: fixed;
+  height: 80vh;
+  width: 60vw;
+  background-color: #f5f5f5;
+  border: 0.125rem solid #8a4fff;
+  border-radius: 1rem;
+  box-shadow: 0.2rem 0.2rem 0.4rem 0.5rem #8a4fff;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.box1 {
+  height: 75vh;
+  width: 40vw;
+}
+.location {
+  height: 2rem;
+  width: 25rem;
+  margin-left: 0.6rem;
+}
+.city {
+  height: 2rem;
+  display: inline-block;
+  font-size: 1.5rem;
+}
+.state {
+  height: 2rem;
+  display: inline-block;
+  font-size: 0.9rem;
+}
+.country {
+  height: 2rem;
+  display: inline-block;
+  font-size: 0.8rem;
+}
+
+.text {
+  height: 5rem;
+  display: flex;
+  align-items: center;
+  gap: 4rem;
+  margin-top: 1rem;
+}
+.icon {
+  height: 5rem;
+  width: 5rem;
+  margin-left: 0.5rem;
+}
+.morning {
+  background-image: url(sun.png);
+  background-size: cover;
+}
+.night {
+  background-image: url(moon.png);
+  background-size: cover;
+}
+.temp {
+  height: 5rem;
+  width: 5rem;
+  display: flex;
+  flex-direction: row;
+}
+#num {
+  font-size: 4rem;
+  text-align: center;
+}
+#sym {
+  font-size: 1.5rem;
+}
+.days {
+  margin-top: 2rem;
+  margin-left: 0.6rem;
+  height: 14rem;
+  width: 38vw;
+  border-radius: 0.7rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  overflow-x: scroll;
+  scroll-behavior: smooth;
+  scrollbar-width: none;
+  overflow-y: hidden;
+  gap: 1rem;
+}
+.day {
+  height: 11rem;
+  width: 5rem;
+  flex: 0 0 auto;
+  background-color: #dbd7d2;
+  border: 0.125rem solid black;
+  border-radius: 0.7rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  transition: all 0.5s linear 0s;
+  margin-left: 1rem;
+}
+.date {
+  font-size: 1.2rem;
+}
+.auto {
+  height: 4rem;
+  width: 4rem;
+  background-image: url(sunny.png);
+  background-size: cover;
+}
+.temp1 {
+  height: 2rem;
+  width: 4rem;
+  display: flex;
+  flex-direction: column;
+}
+.t {
+  height: 2rem;
+  width: 4rem;
+  text-align: center;
+}
+.hours {
+  height: 9rem;
+  width: 38vw;
+  border-radius: 0.7rem;
+  margin: 2rem 0 0 0.6rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  scrollbar-width: none;
+  gap: 1rem;
+}
+.hour {
+  height: 6rem;
+  width: 6rem;
+  background-color: #dbd7d2;
+  border: 0.125rem solid black;
+  border-radius: 0.7rem;
+  flex: 0 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  transition: all 0.5s linear 0s;
+}
+.time {
+  height: 2rem;
+  display: inline;
+  font-size: 1.2rem;
+}
+.temp {
+  display: flex;
+  height: 3rem;
+  width: 6rem;
+  align-items: baseline;
+  justify-content: center;
+}
+.tempnum {
+  height: 3rem;
+  display: inline;
+  font-size: 1.5rem;
+}
+.tempsym {
+  height: 3rem;
+  display: inline-block;
+  width: 2rem;
+}
+
+.box2 {
+  height: 75vh;
+  width: 15vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  gap: 1rem;
+  margin-left: 0.5rem;
+}
+.humidity {
+  height: 7rem;
+  width: 12rem;
+  border: 0.125rem solid black;
+  background-color: #dbd7d2;
+  box-shadow: 0.125rem 0.125rem 0.25rem 0.32rem #8a4fff;
+  border-radius: 0.7rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  transition: all 0.5s linear 0s;
+}
+.heading1 {
+  height: 1rem;
+  font-size: 1.2rem;
+  margin-left: 0.6rem;
+}
+.body1 {
+  width: 12rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+.img1 {
+  height: 4rem;
+  width: 4rem;
+  background-image: url(humidity.png);
+  background-size: cover;
+}
+.text1 {
+  display: flex;
+  flex-direction: row;
+}
+.textHum1 {
+  height: 4rem;
+  width: 3.8rem;
+  font-size: 3.5rem;
+}
+.wind {
+  height: 8rem;
+  width: 12rem;
+  border: 0.125rem solid black;
+  background-color: #dbd7d2;
+  box-shadow: 0.125rem 0.125rem 0.25rem 0.32rem #8a4fff;
+  border-radius: 0.7rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  transition: all 0.5s linear 0s;
+}
+.main1 {
+  height: 8rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.img2 {
+  height: 4rem;
+  width: 4rem;
+  background-image: url(wind.png);
+  background-size: cover;
+}
+.text2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.windspeed {
+  display: flex;
+  flex-direction: column;
+}
+.speed {
+  display: flex;
+  align-items: baseline;
+  gap: 0.2rem;
+}
+#speedNum {
+  font-size: 2rem;
+}
+#name1 {
+  font-size: 0.9rem;
+}
+.winddirection {
+  display: flex;
+  flex-direction: column;
+}
+.direction {
+  font-size: 1rem;
+}
+#name2 {
+  font-size: 0.9rem;
+}
+.precipitation {
+  height: 7rem;
+  width: 12rem;
+  border: 0.125rem solid black;
+  background-color: #dbd7d2;
+  box-shadow: 0.125rem 0.125rem 0.25rem 0.32rem #8a4fff;
+  border-radius: 0.7rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  transition: all 0.5s linear 0s;
+}
+.img3 {
+  height: 4rem;
+  width: 4rem;
+  background-image: url(rain.png);
+  background-size: cover;
+}
+.num {
+  height: 4rem;
+  display: flex;
+  align-items: baseline;
+}
+.numpre {
+  height: 4rem;
+  font-size: 3rem;
+}
+.sympre {
+  font-size: 1.2rem;
+}
+.chance {
+  height: 7rem;
+  width: 12rem;
+  border: 0.125rem solid black;
+  background-color: #dbd7d2;
+  box-shadow: 0.125rem 0.125rem 0.25rem 0.32rem #8a4fff;
+  border-radius: 0.7rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  transition: all 0.5s linear 0s;
+}
+.img4 {
+  height: 4rem;
+  width: 4rem;
+  background-image: url(curve.png);
+  background-size: cover;
+}
+.over:hover {
+  transform: scale(1.2);
+  transform-origin: center;
+  background-color: #bebfc5;
+}
+.over1:hover {
+  background-color: #bebfc5;
+  transform: scale(1.2, 1.2);
+  transform-origin: center;
+}
+.indicator {
+  height: 12.5rem;
+  width: 25rem;
+  border: 0.125rem solid black;
+  border-radius: 0.7rem;
+  position: absolute;
+  z-index: 1000;
+  background-color: #4b88a2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.img {
+  height: 10rem;
+  width: 10rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 0;
+}
+.loader {
+  height: 6.3rem;
+  width: 6.3rem;
+  border-radius: 50%;
+  background-color: #d55672;
+  border: 0.3rem solid #d55672;
+  border-top: 0.5rem dotted #301a4b;
+  animation: load 1.5s linear 0s infinite normal;
+  position: absolute;
+  top: 3.5rem;
+}
+.pic {
+  height: 8rem;
+  width: 6rem;
+  background-image: url(seeingDown.png);
+  background-size: cover;
+  position: absolute;
+  left: 13rem;
+  transform: rotate(-3deg);
+}
+@keyframes load {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.hide {
+  visibility: hidden;
+}
+.hide1 {
+  display: none;
+}
+.A1 .A2 .A3 .A4 .A5 .A6 {
+  visibility: hidden;
+}
